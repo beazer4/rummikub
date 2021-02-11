@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/brendanehle/CLionProjects/rummikub/deck.cpp" "/Users/brendanehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/deck.cpp.o"
-  "/Users/brendanehle/CLionProjects/rummikub/hand.cpp" "/Users/brendanehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/hand.cpp.o"
-  "/Users/brendanehle/CLionProjects/rummikub/main.cpp" "/Users/brendanehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/main.cpp.o"
-  "/Users/brendanehle/CLionProjects/rummikub/tile.cpp" "/Users/brendanehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/tile.cpp.o"
+  "C:/Users/Brendan Ehle/CLionProjects/rummikub/deck.cpp" "C:/Users/Brendan Ehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/deck.cpp.obj"
+  "C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.cpp" "C:/Users/Brendan Ehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/hand.cpp.obj"
+  "C:/Users/Brendan Ehle/CLionProjects/rummikub/main.cpp" "C:/Users/Brendan Ehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/main.cpp.obj"
+  "C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.cpp" "C:/Users/Brendan Ehle/CLionProjects/rummikub/cmake-build-debug/CMakeFiles/rummikub.dir/tile.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

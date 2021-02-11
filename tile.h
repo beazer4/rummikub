@@ -17,7 +17,6 @@ public:
     bool operator< (const tile& rhs) const;
     int getNum();
     std::string getColor();
-
 };
 
 

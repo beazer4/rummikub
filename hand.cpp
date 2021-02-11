@@ -21,6 +21,12 @@ void hand::printHand() {
         curHand[i].printTile();
     }
 }
+tile hand::getTile(int i) {
+    return curHand[i];
+}
+std::vector<tile> hand::h2v() {
+    return curHand;
+}
 bool hand::isStraight(std::vector<tile> set) {
     sort(set.begin(), set.end());
     int testRank = set[0].getNum();
@@ -68,5 +74,32 @@ bool hand::SF(std::vector<tile> set) {
 bool hand::SnDc(std::vector<tile> set) {
     return (isSameNum(set) && difColor(set));
 }
+std::vector<std::vector<tile>> hand::perm(hand h, int num) {
+    std::vector<std::vector<tile>> perm;
+    sort(h.curHand.begin(), h.curHand.end());
+    h.printHand();
+    while (std::next_permutation(h.curHand.begin(), h.curHand.end())) {
+        std::vector<tile> tiles;
+        for (int j=0; j < num; j++) {
+            tiles.push_back(curHand[j]);
+        }
+        perm.push_back(tiles);
+    }
+    return perm;
+}
+void hand::printVec(std::vector<tile> perm) {
+    for (int i=0; i < perm.size(); i++){
+        std::cout << perm[i].getNum() << " " << perm[i].getColor() << "     ";
+    }
+}
+void hand::printPerms(std::vector<std::vector<tile>> perms) {
+    for (int i=0; i < perms.size(); i++){
+        printVec(perms[i]);
+        std::cout << std::endl;
+    }
+}
+
+
+
 
 

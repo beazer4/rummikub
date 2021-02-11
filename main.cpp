@@ -1,20 +1,21 @@
 #include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 #include "deck.h"
 #include "hand.h"
+#include <time.h>
 
 int main() {
     srand(time(0));
     deck d;
     hand h;
-    tile t1 = tile(8, "blue");
-    tile t2 = tile(8, "blue");
-    tile t3 = tile(8, "red");
-    std::vector<tile> hand1 = {t1, t2, t3};
-    std::cout << h.isStraight(hand1) << std::endl;
-    std::cout << h.isFlush(hand1) << std::endl;
-    std::cout << h.isSameNum(hand1) << std::endl;
-    std::cout << h.difColor(hand1) << std::endl;
+    h.add(tile(8, "orange"));
+    h.add(tile(7, "blue"));
+    h.add(tile(9, "red"));
+    h.add(tile(8, "black"));
+    h.add(tile(3, "blue"));
+    h.add(tile(4, "red"));
+    std::vector<std::vector<tile>> per = h.perm(h, 3);
+    h.printPerms(per);
     return 0;
 }

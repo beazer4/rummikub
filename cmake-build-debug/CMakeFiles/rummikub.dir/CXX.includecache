@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/brendanehle/CLionProjects/rummikub/deck.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/deck.h
 map
 -
 string
@@ -16,13 +16,17 @@ iostream
 cstdlib
 -
 tile.h
-/Users/brendanehle/CLionProjects/rummikub/tile.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.h
 vector
 -
 
-/Users/brendanehle/CLionProjects/rummikub/hand.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.cpp
+hand.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.h
+
+C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.h
 deck.h
-/Users/brendanehle/CLionProjects/rummikub/deck.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/deck.h
 map
 -
 string
@@ -30,25 +34,13 @@ string
 iostream
 -
 tile.h
-/Users/brendanehle/CLionProjects/rummikub/tile.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.h
 vector
 -
 algorithm
 -
 
-/Users/brendanehle/CLionProjects/rummikub/main.cpp
-iostream
--
-stdio.h
--
-stdlib.h
--
-deck.h
-/Users/brendanehle/CLionProjects/rummikub/deck.h
-hand.h
-/Users/brendanehle/CLionProjects/rummikub/hand.h
-
-/Users/brendanehle/CLionProjects/rummikub/tile.h
+C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.h
 string
 -
 iostream

@@ -22,7 +22,6 @@ deck::deck() {
     tilesRem = curDeck.size();
 
 }
-
 tile deck::randomDraw() {
     int randTile = rand() % curDeck.size();
     tile t = curDeck[randTile];
