@@ -19,3 +19,6 @@ int tile::getNum() {
 std::string tile::getColor() {
     return color;
 }
+bool tile::operator==(const tile &rhs) const {
+    return (rhs.color == color && rhs.num == num);
+}

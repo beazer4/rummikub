@@ -29,7 +29,7 @@ public:
     bool difColor(std::vector<tile> set);
     bool SF(std::vector<tile> set);
     bool SnDc(std::vector<tile> set);
-    std::vector<std::vector<tile>> perm(hand h, int num);
+    std::vector<std::vector<tile>> perm(hand& h, int num);
     void printPerms(std::vector<std::vector<tile>> perms);
     void printVec(std::vector<tile> perm);
 };

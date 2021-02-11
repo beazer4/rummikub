@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Brendan Ehle/CLionProjects/rummikub/deck.h
+/Users/brendanehle/CLionProjects/rummikubgit/deck.h
 map
 -
 string
@@ -16,17 +16,13 @@ iostream
 cstdlib
 -
 tile.h
-C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.h
+/Users/brendanehle/CLionProjects/rummikubgit/tile.h
 vector
 -
 
-C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.cpp
-hand.h
-C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.h
-
-C:/Users/Brendan Ehle/CLionProjects/rummikub/hand.h
+/Users/brendanehle/CLionProjects/rummikubgit/hand.h
 deck.h
-C:/Users/Brendan Ehle/CLionProjects/rummikub/deck.h
+/Users/brendanehle/CLionProjects/rummikubgit/deck.h
 map
 -
 string
@@ -34,13 +30,27 @@ string
 iostream
 -
 tile.h
-C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.h
+/Users/brendanehle/CLionProjects/rummikubgit/tile.h
 vector
 -
 algorithm
 -
 
-C:/Users/Brendan Ehle/CLionProjects/rummikub/tile.h
+/Users/brendanehle/CLionProjects/rummikubgit/main.cpp
+iostream
+-
+cstdio
+-
+cstdlib
+-
+deck.h
+/Users/brendanehle/CLionProjects/rummikubgit/deck.h
+hand.h
+/Users/brendanehle/CLionProjects/rummikubgit/hand.h
+time.h
+-
+
+/Users/brendanehle/CLionProjects/rummikubgit/tile.h
 string
 -
 iostream

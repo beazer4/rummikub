@@ -74,17 +74,19 @@ bool hand::SF(std::vector<tile> set) {
 bool hand::SnDc(std::vector<tile> set) {
     return (isSameNum(set) && difColor(set));
 }
-std::vector<std::vector<tile>> hand::perm(hand h, int num) {
+std::vector<std::vector<tile>> hand::perm(hand& h, int num) {
     std::vector<std::vector<tile>> perm;
     sort(h.curHand.begin(), h.curHand.end());
-    h.printHand();
-    while (std::next_permutation(h.curHand.begin(), h.curHand.end())) {
+    do {
         std::vector<tile> tiles;
         for (int j=0; j < num; j++) {
             tiles.push_back(curHand[j]);
         }
         perm.push_back(tiles);
-    }
+        if (!std::count(perm.begin(), perm.end(), tiles)) {
+            perm.push_back(tiles);
+        }
+    } while (std::next_permutation(h.curHand.begin(), h.curHand.end()));
     return perm;
 }
 void hand::printVec(std::vector<tile> perm) {

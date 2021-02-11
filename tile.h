@@ -15,6 +15,7 @@ public:
     tile(int x, std::string y);
     void printTile();
     bool operator< (const tile& rhs) const;
+    bool operator== (const tile& rhs) const;
     int getNum();
     std::string getColor();
 };
