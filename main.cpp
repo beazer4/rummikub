@@ -17,7 +17,7 @@ int main() {
     h.add(tile(4, "red"));
 /*
     h.add(tile(1, "orange"));
-
+hello mac
     h.add(tile(2, "blue"));
 
     h.add(tile(5, "red"));
