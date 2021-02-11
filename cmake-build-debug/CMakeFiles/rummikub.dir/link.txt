@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/rummikub.dir/main.cpp.o CMakeFiles/rummikub.dir/hand.cpp.o CMakeFiles/rummikub.dir/deck.cpp.o CMakeFiles/rummikub.dir/tile.cpp.o  -o rummikub 
