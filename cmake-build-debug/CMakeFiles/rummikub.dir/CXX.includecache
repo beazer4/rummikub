@@ -20,6 +20,10 @@ tile.h
 vector
 -
 
+/Users/brendanehle/CLionProjects/rummikubgit/hand.cpp
+hand.h
+/Users/brendanehle/CLionProjects/rummikubgit/hand.h
+
 /Users/brendanehle/CLionProjects/rummikubgit/hand.h
 deck.h
 /Users/brendanehle/CLionProjects/rummikubgit/deck.h
@@ -34,20 +38,6 @@ tile.h
 vector
 -
 algorithm
--
-
-/Users/brendanehle/CLionProjects/rummikubgit/main.cpp
-iostream
--
-cstdio
--
-cstdlib
--
-deck.h
-/Users/brendanehle/CLionProjects/rummikubgit/deck.h
-hand.h
-/Users/brendanehle/CLionProjects/rummikubgit/hand.h
-time.h
 -
 
 /Users/brendanehle/CLionProjects/rummikubgit/tile.h
