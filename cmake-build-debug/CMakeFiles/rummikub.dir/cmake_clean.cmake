@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rummikub.dir/deck.cpp.o"
-  "CMakeFiles/rummikub.dir/hand.cpp.o"
-  "CMakeFiles/rummikub.dir/main.cpp.o"
-  "CMakeFiles/rummikub.dir/tile.cpp.o"
-  "rummikub"
+  "CMakeFiles/rummikub.dir/deck.cpp.obj"
+  "CMakeFiles/rummikub.dir/hand.cpp.obj"
+  "CMakeFiles/rummikub.dir/main.cpp.obj"
+  "CMakeFiles/rummikub.dir/run.cpp.obj"
+  "CMakeFiles/rummikub.dir/tile.cpp.obj"
+  "librummikub.dll.a"
+  "rummikub.exe"
+  "rummikub.exe.manifest"
   "rummikub.pdb"
 )
 

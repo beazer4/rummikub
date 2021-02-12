@@ -4,8 +4,10 @@
 
 #include "hand.h"
 
-hand::hand() {
+
+hand::hand(std::string player1) {
     numTiles = 0;
+    player = std::move(player1);
 }
 void hand::add(tile t) {
     curHand.push_back(t);
@@ -99,6 +101,9 @@ void hand::printPerms(std::vector<std::vector<tile>> perms) {
         printVec(perms[i]);
         std::cout << std::endl;
     }
+}
+std::string hand::getPlayer() {
+    return player;
 }
 
 

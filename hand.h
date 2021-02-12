@@ -11,17 +11,20 @@
 #include "tile.h"
 #include <vector>
 #include <algorithm>
+#include <utility>
 
 class hand {
 private:
     int numTiles;
     std::vector<tile> curHand;
+    std::string player;
 public:
-    hand();
+    hand(std::string player1);
     void add(tile t);
     void openHand(deck& d);
     void printHand();
     tile getTile(int i);
+    std::string getPlayer();
     std::vector<tile> h2v();
     bool isStraight(std::vector<tile> set);
     bool isFlush(std::vector<tile> set);

@@ -3,4 +3,4 @@ project(rummikub)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(rummikub main.cpp hand.cpp hand.h deck.cpp deck.h tile.cpp tile.h)
+add_executable(rummikub main.cpp hand.cpp hand.h deck.cpp deck.h tile.cpp tile.h run.cpp run.h)
