@@ -16,8 +16,10 @@ private:
     std::vector<tile> curRun;
     std::string player;
     int length;
+    std::string type;
+    bool joker;
 public:
-    run(std::vector<tile> r, std::string p);
+    run(std::vector<tile> r, std::string p, std::string t);
 };
 
 

@@ -8,7 +8,7 @@
 int main() {
     srand(time(0));
     deck d;
-    hand h;
+    hand h("Brendan");
     h.add(tile(8, "orange"));
     h.add(tile(7, "blue"));
     h.add(tile(9, "red"));
@@ -20,7 +20,6 @@ int main() {
     h.add(tile(2, "blue"));
 
     h.add(tile(5, "red"));
-hello mac
     h.add(tile(9, "black"));
 
     h.add(tile(11, "blue"));
