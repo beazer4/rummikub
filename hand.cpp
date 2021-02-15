@@ -116,6 +116,9 @@ std::vector<std::vector<tile>> hand::validMoves(std::vector<std::vector<tile>> p
     }
     return val;
 }
+tile hand::check5(hand &h, std::vector<tile>) {
+    
+}
 int hand::runScore(std::vector<tile> run) {
     int val = 0;
     for (int i=0; i < run.size(); i++) {
@@ -130,12 +133,38 @@ int hand::runScore(std::vector<tile> run) {
     if (SnDc(run)) {
         val += 18;
     }
-    val +=
+    val += run.size()*2;
+    return val;
 }
 std::vector<tile> hand::bestMove(std::vector<std::vector<tile>> all) {
     std::vector<tile> best;
-
+    for (int i=0; i<all.size(); i++) {
+        if (best.size() == 0) {
+            for (int j=0; j<all[i].size(); j++) {
+                best.push_back(all[i][j]);
+            }
+        }
+        else {
+            if (runScore(best) < runScore(all[i])) {
+                best.clear();
+                for (int j=0; j<all[i].size(); j++) {
+                    best.push_back(all[i][j]);
+                }
+            }
+        }
+    }
+    return best;
 }
+std::vector<tile> hand::move(hand& h) {
+    std::vector<std::vector<tile>> p3 = validMoves(perm(h, 3));
+    std::vector<std::vector<tile>> p4 = validMoves(perm(h, 4));
+    std::vector<std::vector<tile>> p;
+    p.insert(p.end(), p3.begin(), p3.end());
+    p.insert(p.end(), p4.begin(), p4.end());
+    std::vector<tile> m = bestMove(p);
+    return m;
+}
+
 
 
 

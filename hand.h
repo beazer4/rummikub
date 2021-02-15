@@ -36,8 +36,10 @@ public:
     static void printSets(std::vector<std::vector<tile>> sets);
     static void printVec(std::vector<tile> perm);
     std::vector<std::vector<tile>> validMoves(std::vector<std::vector<tile>> perms);
+    tile check5(hand& h, std::vector<tile>);
     int runScore(std::vector<tile> run);
     std::vector<tile> bestMove(std::vector<std::vector<tile>> all);
+    std::vector<tile> move(hand& h);
 };
 
 
