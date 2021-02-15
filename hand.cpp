@@ -70,10 +70,10 @@ bool hand::difColor(std::vector<tile> set) {
     }
     return true;
 }
-bool hand::SF(std::vector<tile> set) {
+bool hand::SF(const std::vector<tile>& set) {
     return (isFlush(set) && isStraight(set));
 }
-bool hand::SnDc(std::vector<tile> set) {
+bool hand::SnDc(const std::vector<tile>& set) {
     return (isSameNum(set) && difColor(set));
 }
 std::vector<std::vector<tile>> hand::perm(hand& h, int num) {
@@ -84,7 +84,6 @@ std::vector<std::vector<tile>> hand::perm(hand& h, int num) {
         for (int j=0; j < num; j++) {
             tiles.push_back(curHand[j]);
         }
-        perm.push_back(tiles);
         if (!std::count(perm.begin(), perm.end(), tiles)) {
             perm.push_back(tiles);
         }
@@ -96,15 +95,49 @@ void hand::printVec(std::vector<tile> perm) {
         std::cout << perm[i].getNum() << " " << perm[i].getColor() << "     ";
     }
 }
-void hand::printPerms(std::vector<std::vector<tile>> perms) {
-    for (int i=0; i < perms.size(); i++){
-        printVec(perms[i]);
+void hand::printSets(std::vector<std::vector<tile>> sets) {
+    for (int i=0; i < sets.size(); i++){
+        printVec(sets[i]);
         std::cout << std::endl;
     }
 }
 std::string hand::getPlayer() {
     return player;
 }
+std::vector<std::vector<tile>> hand::validMoves(std::vector<std::vector<tile>> perms) {
+    std::vector<std::vector<tile>> val;
+    for (int i=0; i < perms.size(); i++) {
+        if (SF(perms[i]) or SnDc(perms[i])) {
+            sort(perms[i].begin(), perms[i].end());
+            if (!std::count(val.begin(), val.end(), perms[i])) {
+                val.push_back(perms[i]);
+            }
+        }
+    }
+    return val;
+}
+int hand::runScore(std::vector<tile> run) {
+    int val = 0;
+    for (int i=0; i < run.size(); i++) {
+        val += run[i].getNum();
+        if (run[i].getNum() == 0) {
+            val -= 8;
+        }
+    }
+    if (SF(run)) {
+        val += 10;
+    }
+    if (SnDc(run)) {
+        val += 18;
+    }
+    val +=
+}
+std::vector<tile> hand::bestMove(std::vector<std::vector<tile>> all) {
+    std::vector<tile> best;
+
+}
+
+
 
 
 

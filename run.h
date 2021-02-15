@@ -19,7 +19,8 @@ private:
     std::string type;
     bool joker;
 public:
-    run(std::vector<tile> r, std::string p, std::string t);
+    run(std::vector<tile> r, std::string p);
+
 };
 
 

@@ -30,11 +30,14 @@ public:
     bool isFlush(std::vector<tile> set);
     bool isSameNum(std::vector<tile> set);
     bool difColor(std::vector<tile> set);
-    bool SF(std::vector<tile> set);
-    bool SnDc(std::vector<tile> set);
+    bool SF(const std::vector<tile>& set);
+    bool SnDc(const std::vector<tile>& set);
     std::vector<std::vector<tile>> perm(hand& h, int num);
-    void printPerms(std::vector<std::vector<tile>> perms);
-    void printVec(std::vector<tile> perm);
+    static void printSets(std::vector<std::vector<tile>> sets);
+    static void printVec(std::vector<tile> perm);
+    std::vector<std::vector<tile>> validMoves(std::vector<std::vector<tile>> perms);
+    int runScore(std::vector<tile> run);
+    std::vector<tile> bestMove(std::vector<std::vector<tile>> all);
 };
 
 

@@ -7,11 +7,10 @@
 #include <utility>
 
 
-run::run(std::vector<tile> r, std::string p, std::string t) {
+run::run(std::vector<tile> r, std::string p) {
     curRun = std::move(r);
     player = std::move(p);
     length = curRun.size();
-    type = std::move(t);
     bool j = false;
     for (int i=0; i<length; i++) {
         if (curRun[i].getNum() == 0) {
@@ -19,5 +18,4 @@ run::run(std::vector<tile> r, std::string p, std::string t) {
         }
     }
     joker = j;
-
 }

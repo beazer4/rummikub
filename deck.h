@@ -4,7 +4,6 @@
 
 #ifndef RUMMIKUB_DECK_H
 #define RUMMIKUB_DECK_H
-#include <map>
 #include <string>
 #include <iostream>
 #include <cstdlib>
